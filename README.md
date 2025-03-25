@@ -1,5 +1,14 @@
-# CSE221-LAB-ASSIGNMENTS
+# **CSE221 Lab Assignments**  
 
-This is a repository of all my CSE221 assignments in SPRING 2024!! 
+📌 **Spring 2024** | **Course: CSE221 - Algorithms & Data Structures**  
 
-## DO NOT PLAGIARIZE, YOU WILL BE IN TROUBLE, NOT ME
+Welcome to my repository for **CSE221 lab assignments**! This repo contains all the assignments I’ve completed throughout the semester.  
+
+## 🚨 **DO NOT PLAGIARIZE**  
+
+## 📂 **Contents**  
+- **Lab 1:** [Basic Algorithms](./LAB%201/)  
+- **Lab 2:** [Two Pointers](./LAB%202/)  
+- **Lab 3:** [Divide & Conquer](./LAB%203/)  
+
+Happy coding! 🚀
