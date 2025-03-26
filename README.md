@@ -5,7 +5,7 @@
 Welcome to my repository for **CSE221 lab assignments**! This repo contains all the assignments I’ve completed throughout the semester.  
 
 ## 🚨 **DO NOT PLAGIARIZE**  
-🔹 **Just don't...**  
+**Just don't...**  
 
 ## 📂 **Contents**  
 - **Lab 1:** [Basic Algorithms](./LAB%201/)  
