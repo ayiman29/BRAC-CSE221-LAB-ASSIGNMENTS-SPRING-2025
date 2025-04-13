@@ -11,5 +11,6 @@ Welcome to my repository for **CSE221 lab assignments**! This repo contains all 
 - **Lab 1:** [Basic Algorithms](./LAB%201/)  
 - **Lab 2:** [Two Pointers](./LAB%202/)  
 - **Lab 3:** [Divide & Conquer](./LAB%203/)  
+- **Lab 4:** [Graphs](./LAB%204/)  
 
 Happy coding! 🚀
