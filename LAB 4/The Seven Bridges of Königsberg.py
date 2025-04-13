@@ -1,30 +1,15 @@
-# RULE:
-# 1) No. of odd-degree nodes can be 0 or 2
-# 2) Graph must be connected
-#DOESN'T WORK
-n, m = map(int, input().split())
+N, M = map(int, input().split())
+u = list(map(int, input().split()))
+v = list(map(int, input().split()))
 
-u_list = list(map(int, input().split())) 
-v_list = list(map(int, input().split()))  
+degree = [0] * (N + 1)
 
+for i in range(M):
+    degree[u[i]] += 1
+    degree[v[i]] += 1
 
-nodes = set(u_list + v_list)
-adj_list = {i: set() for i in nodes}
+odd_count = sum(1 for d in degree if d % 2 != 0)
 
-
-
-
-for u, v in zip(u_list, v_list):
-    adj_list[u].add(v)  
-    adj_list[v].add(u) 
+print("YES" if odd_count == 0 or odd_count == 2 else "NO")
 
 
-
-odd = 0
-for i, j in adj_list.items():
-    if len(j) % 2 != 0:
-        odd += 1
-if odd == 2 or odd == 0:
-    print("YES")
-else:
-    print("NO")
