@@ -13,18 +13,17 @@ for node in graph:
     graph[node].sort()
  
  
-def dfs(tree, node, path = None, seen=None):
-    if seen is None:
-        seen = set() 
-    if path is None:
-        path = []
+def dfs(tree, node, path, seen):
     seen.add(node)
     path.append(node)    
-  
+
     for child in tree[node]:  
         if child not in seen:
             dfs(tree, child, path, seen)
     return path
- 
- 
-print(*dfs(graph, 1))
+
+
+seen = set()
+path = []
+
+print(*dfs(graph, 1, path, seen))

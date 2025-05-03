@@ -14,7 +14,7 @@ def bfs(graph, source=1):
     que.append(source)
     visited.add(source)
 
-    while que:
+    while que: 
         curr = que.popleft()
         path.append(curr)
 
