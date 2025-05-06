@@ -13,8 +13,8 @@ Welcome to my repository for **CSE221 lab assignments**! This repo contains all 
 - **Lab 3:** [Divide & Conquer](./LAB%203/)  
 - **Lab 4:** [Graphs](./LAB%204/)
 - **Lab 5:** [BFS and DFS Traversals](./LAB%205/)
-- **Lab 6:** [TBA](./LAB%206/)
-- **Lab 7:** [TBA](./LAB%207/)
+- **Lab 6:** [Topological Sort + BFS/DFS Implementation](./LAB%206/)
+- **Lab 7:** [Dijkstra's Algorithm](./LAB%207/)
 - **Lab 8:** [TBA](./LAB%208/) 
 
 Happy coding! 🚀
