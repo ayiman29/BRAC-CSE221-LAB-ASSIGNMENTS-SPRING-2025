@@ -1,37 +1,52 @@
 from collections import defaultdict
 import heapq
-
+ 
 n, m, s, d = map(int, input().split())
 s -= 1
 d -= 1
-
+ 
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+list3 = list(map(int, input().split()))
+ 
+list1 = [x - 1 for x in list1]
+list2 = [x - 1 for x in list2]
+ 
 graph = defaultdict(list)
-for _ in range(m):
-    u, v, w = map(int, input().split())
-    u -= 1
-    v -= 1
-    graph[u].append((v, w))
-    graph[v].append((u, w))  
-
-dist = [[float('inf'), float('inf')] for _ in range(n)]
-dist[s][0] = 0
-
-heap = [(0, s)]
-
-while heap:
-    cost, u = heapq.heappop(heap)
-
-    for v, w in graph[u]:
-        new_cost = cost + w
-        if new_cost < dist[v][0]:
-            dist[v][1] = dist[v][0]
-            dist[v][0] = new_cost
-            heapq.heappush(heap, (new_cost, v))
-        elif dist[v][0] < new_cost < dist[v][1]:
-            dist[v][1] = new_cost
-            heapq.heappush(heap, (new_cost, v))
-
-print(dist[d][1] if dist[d][1] != float('inf') else -1)
-
-
-
+for i in range(m):
+    graph[list1[i]].append((list2[i], list3[i]))
+ 
+def dijkstra(graph, s, d):
+    dist = [float('inf')] * n
+    parent = [None] * n
+    heap = [(0, s)]
+    dist[s] = 0
+ 
+    while heap:
+        curr_dist, u = heapq.heappop(heap)
+ 
+        if curr_dist > dist[u]:
+            continue 
+ 
+        for v, w in graph[u]:
+            if dist[v] > dist[u] + w:
+                dist[v] = dist[u] + w
+                parent[v] = u
+                heapq.heappush(heap, (dist[v], v))
+ 
+    if dist[d] == float('inf'):
+        return -1, []
+ 
+    path = []
+    cur = d
+    while cur is not None:
+        path.append(cur+1)
+        cur = parent[cur]
+    path.reverse()
+ 
+    return dist, path
+ 
+dist, path = dijkstra(graph, s, d)
+print(dist[d] if dist != -1 else -1)
+if len(path) != 0:
+    print(*path)
