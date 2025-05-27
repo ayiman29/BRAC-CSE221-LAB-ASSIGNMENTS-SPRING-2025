@@ -1,0 +1,69 @@
+Here is a Pseudocode of the Merge Sort Algorithm.
+
+def merge(a, b):
+    # a and b are two sorted list
+    # merge function will return a sorted list after merging a and b
+
+def mergeSort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        mid = len(arr)//2
+        a1 = mergeSort(............)
+        a2 = mergeSort(............)
+        return merge(a1, a2)
+
+Now, you are given an array A of size N of N distinct integers. It is guaranteed
+that the array A contains a permutation of integers from 1 to N (i.e., every
+integer from 1 to N appears exactly once).
+Count the number of inversions in the given array.
+
+An inversion is a pair (i,j)
+where i<j and A[i]>A[j].
+
+Solve this task in O(NlogN)
+
+1 <= N <= 100000.
+1 <= A[i] <= N. (It is guaranteed that the array will be a permutation. i.e.
+There will be no duplicate elements)
+
+Example-1:
+N = 5
+A = [1, 2, 5, 4, 3]
+solve(A, N) returns 3
+
+Example-2:
+N = 5
+A = [1, 2, 3, 4, 5]
+solve(A, N) returns 0
+
+Example-3:
+N = 5
+A = [5, 4, 3, 2, 1]
+solve(A, N) returns 10
+
+Example-4:
+N = 7
+A = [6, 4, 2, 5, 7, 3, 1]
+solve(A, N) returns 14
+
+Time limit: 1s per batch.
+
+Scoring:
+Batch   Score   Tests   max(N)
+1       0.05    1       5       (Example - 1)
+2       0.05    1       5       (Example - 2)
+3       0.05    1       5       (Example - 3)
+4       0.05    1       7       (Example - 4)
+5       0.08    100     10
+6       0.08    100     20
+7       0.08    10      100
+8       0.08    100     100
+9       0.08    10      1000
+10      0.08    100     1000
+11      0.08    100     1000
+12      0.08    10      10000
+13      0.08    10      100000
+14      0.08    10      100000
+-------------------------------
+14      1       Total

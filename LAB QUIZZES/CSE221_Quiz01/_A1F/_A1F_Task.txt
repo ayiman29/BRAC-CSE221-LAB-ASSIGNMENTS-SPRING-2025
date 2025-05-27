@@ -1,0 +1,44 @@
+Suppose you are given a task to rank the students. You have gotten the marks and
+ID of the students. Now your task is to rank the students based on their marks
+using a sorting algorithm. If two or more students get the same mark, then
+students with the lower ID will get prioritized. Also find the minimum number of
+swapping operations needed to rank the students.
+
+sMarks[i] = Mark of the i'th student
+sIDs[i] = ID of the i'th student
+
+Example-1:
+sIDs = [7, 4, 9, 3, 2, 5, 1]
+sMarks = [40, 50, 50, 20, 10, 10, 10]
+solve(sIDs, sMarks) returns (4, [(4, 50), (9, 50), (7, 40), (3, 20), (1, 10), (2, 10), (5, 10)])
+
+Example-2:
+sIDs = [7, 2, 5, 3]
+sMarks = [80, 60, 80, 50]
+solve(sIDs, sMarks) returns (2, [(5, 80), (7, 80), (2, 60), (3, 50)])
+
+Constraints:
+N = number of items in sIDs = number of items in sMarks.
+1 <= N <= 1000.
+1 <= sIDs[i] <= 1000.
+1 <= sMarks[i] <= 1000.
+If i != j then sIDs[i] != sIDs[j]
+
+Scoring:
+Batch   Score   Tests   max(N)
+1       0.1     10      10
+1       0.1     1000    10
+1       0.1     100000  10
+1       0.1     10      100
+1       0.1     100     100
+1       0.1     1000    100
+1       0.1     10000   100
+1       0.1     1       1000
+1       0.1     10      1000
+1       0.1     100     1000
+--------------------------------
+10      1       Total
+
+Time limit: 1s per batch.
+
+Forbidden keywords: sort main scan print input output file read write thread process

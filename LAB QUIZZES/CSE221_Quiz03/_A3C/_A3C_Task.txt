@@ -1,0 +1,49 @@
+You are given two integers A and N. Calculate (A^N) mod 1000003. In other words,
+you have to find A to the power N. As the number can be very large, you aim to
+find the remainder of the result when you divide it by 1000003.
+
+Solve this task in O(logN)
+
+1 <= N <= 10^18
+1 <= A <= 10^6
+
+Example-1:
+A = 100
+N = 3
+solve(A, N) returns 1000000
+
+Example-2:
+A = 10
+N = 7
+solve(A, N) returns 999973
+
+Example-3:
+A = 1000000
+N = 1000000000000000000
+solve(A, N) returns 393996
+
+Example-4:
+A = 1
+N = 1000000000
+solve(A, N) returns 1
+
+Time limit: 1s per batch.
+
+Scoring:
+Batch   Score   Tests   max(N)
+1       0.05    1       3           (Example - 1)
+2       0.05    1       7           (Example - 2)
+3       0.05    1       10^18       (Example - 3)
+4       0.05    1       10^9        (Example - 4)
+5       0.08    1000    10
+6       0.08    1000    10^2
+7       0.08    10000   10^2
+8       0.08    1000    10^3
+9       0.08    10000   10^3
+10      0.08    10      10^6
+11      0.08    1000    10^6
+12      0.08    1000    10^9
+13      0.08    10000   10^12
+14      0.08    10000   10^18
+-------------------------------
+14      1       Total

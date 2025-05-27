@@ -1,0 +1,52 @@
+You are given two lists of integers list1 and list2, both lists are sorted in
+non-decreasing order. Your task is to find the union of these two lists. The
+union should include unique elements from both arrays in descending order. Your
+algorithm should run in O(N+M) time complexity, where N and M are the lengths
+of list1 and list2 respectively.
+
+1 <= N <= 1000000.
+1 <= M <= 1000000.
+1 <= list1[i] <= 1000000000.
+1 <= list2[i] <= 1000000000.
+
+Example-1:
+list1 = [1, 2, 2, 3, 4]
+list2 = [2, 2, 3, 3, 5, 6]
+solve(list1, list2) returns [6, 5, 4, 3, 2, 1]
+
+Example-2:
+list1 = [2, 4, 5, 5, 8, 9, 9, 12, 15]
+list2 = [1, 1, 5, 6, 7, 12, 12, 20]
+solve(list1, list2) returns [20, 15, 12, 9, 8, 7, 6, 5, 4, 2, 1]
+
+Time limit: 1s per batch.
+
+Scoring:
+Batch   Score   Tests   max(max(M,N))
+1       0.04    2       10
+2       0.04    10      10
+3       0.04    1       100
+4       0.04    100     10
+5       0.04    10      100
+6       0.04    1       1000
+7       0.04    1000    10
+8       0.04    100     100
+9       0.04    10      1000
+10      0.04    1       10000
+11      0.04    10000   10
+12      0.04    1000    100
+13      0.04    100     1000
+14      0.04    10      10000
+15      0.04    1       100000
+16      0.04    100000  10
+17      0.04    10000   100
+18      0.04    1000    1000
+19      0.04    100     10000
+20      0.04    10      100000
+21      0.04    100000  100
+22      0.04    10000   1000
+23      0.04    1000    10000
+24      0.04    100     100000
+25      0.04    10      1000000
+-------------------------------
+25      1       Total

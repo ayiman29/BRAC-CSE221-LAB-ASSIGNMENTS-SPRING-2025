@@ -1,0 +1,46 @@
+There is an N x N chessboard, with a king at the initial position (initX, initY).
+There are M unique blocked cells in the chessboard, given in an array arr. 
+The king cannot move to these cells.
+
+You need to count the number of cells the king can move to in a single move.
+
+2 <= N <= 10000
+1 <= M <= min(100, N*N - 1)
+1 <= initX <= N
+1 <= initY <= N
+1 <= arr[i].x <= N
+1 <= arr[i].y <= N
+
+Example-1:
+N = 7
+M = 1
+initX = 6
+initY = 7
+arr = [(7,7)]
+solve(N, initX, initY, arr) returns 7
+
+Example-2:
+N = 2
+M = 2
+initX = 2
+initY = 2
+arr = [(1,1), (1,2)]
+solve(N, initX, initY, arr) returns 1
+
+
+Time limit: 1s per batch.
+
+Scoring:
+Batch   Score  Tests   max(N)
+1       0.1    1       10
+2       0.1    1       100
+3       0.1    100     10
+4       0.1    10      500
+5       0.1    1000    50
+6       0.1    10      5000
+7       0.1    1       10000
+8       0.1    100     1000
+9       0.1    1000    1000
+10      0.1    100     5000
+-------------------------------
+10      1       Total

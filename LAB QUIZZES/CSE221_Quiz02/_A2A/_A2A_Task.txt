@@ -1,0 +1,55 @@
+Your little brother, Bob, loves playing with integers. One day, his teacher gave him a sorted list A of N integers in non-decreasing order. Now, your brother wants to play a game with you.
+
+Bob will give you an integer S. You have to find if it is possible to find two values from the list (at distinct positions) whose sum is equal to S.
+
+Since you are feeling very tired, you decide to write a program that can quickly answer Bob's query.
+
+You have to return two distinct 1-based indices i and j such that A_i+A_j=S
+where i<j. If no such pair exists, then return (-1, -1). If multiple solutions exist, you may return any one of the valid answers.
+
+N = Number of elements
+S = Our target sum
+A[i] = value of the i'th element
+
+Example-1:
+N = 4
+S = 10
+A = [1, 3, 5, 7]
+solve(N, S, A) returns (2, 4)
+
+Example-2:
+N = 6
+S = 18
+A = [1, 5, 8, 9, 9, 10]
+solve(N, S, A) returns (3, 6)
+
+Example-3:
+N = 4
+S = 7
+A = [2, 4, 6, 8]
+solve(N, S, A) returns (-1, -1)
+
+Constraints:
+1 <= N <= 1'000'000
+1 <= S <= 1'000'000'000
+1 <= A[i] <= 1'000'000'000.
+
+
+Scoring:
+Batch   Score   Tests   max(N)     max(S)
+1       0.1     10      10         1'000
+2       0.1     100     10         1'000'000
+3       0.1     100     100        1'000'000
+4       0.1     100     100        1'0000'000'000
+5       0.1     100     1000       1'000'000
+6       0.1     100     1000       1'0000'000'000
+7       0.1     100     10000      1'000'000
+8       0.1     10      100000     1'0000'000'000
+9       0.1     10      1000000    1'000'000
+10      0.1     10      1000000    1'0000'000'000
+--------------------------------------------
+10      1       Total
+
+Time limit: 1s per batch.
+
+Forbidden keywords: main scan print input output file read write thread process

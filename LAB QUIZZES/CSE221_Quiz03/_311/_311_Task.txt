@@ -1,0 +1,50 @@
+You are given an integer N, followed by N integers. There is a list containing
+these N integers in the given order, the x’th item in this list is called arr[x].
+Find the number of pairs of indexes (i, j) such that i < j and arr[i] > 2 * arr[j].
+Solve the problem in O(N*log(N)) time using a Divide and Conquer approach.
+
+1 <= N <= 500000.
+1 <= arr[i] <= 500000.
+
+Example-1:
+arr = [4, 2, 1, 5, 3]
+solve(arr) returns 1
+
+Example-2:
+arr = [1, 4, 3, 10]
+solve(arr) returns 0
+
+Example-3:
+arr = [9, 6, 400000, 2, 12, 5, 300000, 7, 1, 15, 13]
+solve(arr) returns 19
+
+Example-4:
+arr = [23, 11, 5, 2]
+solve(arr) returns 6
+
+Time limit: 1s per batch.
+
+Scoring:
+Batch   Score   Tests   max(max(M,N))
+1       0.05    1       10
+2       0.05    1       10
+3       0.05    1       50
+4       0.05    1       100
+5       0.05    100     10
+6       0.05    10      500
+7       0.05    1    	1000
+8       0.05    1000    50
+9       0.05    100     100
+10      0.05    10      5000
+11      0.05    1       10000
+12      0.05    10000   10
+13      0.05    1000    500
+14      0.05    100     1000
+15      0.05    10      50000
+16      0.05    100000  50
+17      0.05    10000   100
+18      0.05    1000    1000
+19      0.05    100     50000
+20      0.05    10      500000
+-------------------------------
+20      1       Total

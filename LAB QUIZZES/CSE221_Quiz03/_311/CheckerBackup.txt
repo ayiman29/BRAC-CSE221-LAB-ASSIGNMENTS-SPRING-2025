@@ -1,0 +1,53 @@
+@REM If the _311_Checker.bat file does not run at all then rename this file to convert into a .bat file and then run this new file.
+@echo off
+for %%a in (py cpp java) do (
+    powershell -command "if (Select-String -Path '.\EnterIDandLanguage.txt' -Pattern '%%a') { exit 1 } else { exit 0 }" || (
+        for /f %%b in ('powershell -command "Get-Content 'EnterIDandLanguage.txt' -TotalCount 1"') do (
+            powershell -command "if (Get-ChildItem -Path . -Filter '_311_%%b.%%a' -File) { exit 1 } else { exit 0 }" && (
+                if %%a==py (
+                    echo # %%b 0 >_311_%%b.%%a
+                    echo # %COMPUTERNAME% %USERNAME%>>_311_%%b.%%a
+                ) else (
+                    echo // %%b 0 >_311_%%b.%%a
+                    echo // %COMPUTERNAME% %USERNAME%>>_311_%%b.%%a
+                )
+                powershell -command "Get-Content '_311_Solution.%%a' | Add-Content '_311_%%b.%%a'"
+            )
+        )
+        for /f "delims=" %%b in (_311_ForbiddenKeywords.txt) do (
+            for %%c in (%%b) do (
+                powershell -command "if (Select-String -Path '.\_311_Solution.%%a' -Pattern '%%c') { exit 1 } else { exit 0 }" || (
+                    echo Code contains forbidden keyword: %%c
+                    echo Score = 0/1
+                    goto Ending
+                )
+            )
+        )
+        if %%a==py (
+            pypy -m py_compile _311.py
+            if errorlevel 1 (
+                echo CompilationError
+                echo Score = 0/1
+            ) else pypy _311.py
+            rd /q /s __pycache__ >nul
+        )
+        if %%a==cpp (
+            c++ _311_Solution.cpp _311.cpp
+            if errorlevel 1 (
+                echo CompilationError
+                echo Score = 0/1
+            ) else .\a.exe
+            del /q /s /a /f .\*.exe >nul
+        )
+        if %%a==java (
+            javac _311_Solution.java _311.java
+            if errorlevel 1 (
+                echo CompilationError
+                echo Score = 0/1
+            ) else java _311
+            del /q /s /a /f .\*.class >nul
+        )
+    )
+)
+:Ending
+pause

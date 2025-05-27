@@ -1,0 +1,35 @@
+You are given two lists of integers preOrder and postOrder. They contain the
+pre-order traversal and the post-order traversal of a Binary Tree. You need to
+find the in-order traversal of any such Binary Tree.
+
+length of preOrder = length of postOrder = N
+1 <= N <= 10000.
+1 <= preOrder[i] <= 500000.
+1 <= postOrder[i] <= 500000.
+
+Example-1:
+preOrder = [3, 9, 20, 15, 7]
+postOrder = [9, 15, 7, 20, 3]
+solve(preOrder, postOrder) returns [9, 3, 15, 20, 7]
+
+Example-2:
+preOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 500000]
+postOrder = [500000, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+solve(preOrder, postOrder) returns [1, 2, 3, 4, 5, 6, 7, 8, 9, 500000]
+
+Time limit: 1s per batch.
+
+Scoring:
+Batch   Score   Tests   max(N)
+1       0.1     1       5
+2       0.1     1       10
+3       0.1     1       100
+4       0.1     1       1000
+5       0.1     100     100
+6       0.1     10000   10
+7       0.1     1       10000
+8       0.1     100     1000
+9       0.1     10000   100
+10      0.1     1000000 10
+-----------------------------
+10      1       Total

@@ -1,0 +1,67 @@
+Here is the code of bubble sort. Its run time complexity is theta(N^2). Change
+the code in a way so that its time complexity is theta(N) for the best-case
+scenario.
+
+Python:
+def solve(arr):
+    # Change the given code
+    for i in range(len(arr) - 1):
+        for j in range(len(arr) - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+Java:
+import java.util.*;
+
+public class _A1E_Solution {
+    public static ArrayList<Integer> solve(ArrayList<Integer> arr) {
+        // Change the given code
+        for (int i = 0; i < arr.size(); ++i)
+            for (int j = 0; j < arr.size() - i - 1; ++j)
+                if (arr.get(j) > arr.get(j + 1))
+                    Collections.swap(arr, j, j + 1);
+        return arr;
+    }
+}
+
+C++:
+#include<bits/extc++.h>
+using namespace std;
+vector<int> solve(vector<int> arr) {
+    // Change the given code
+    for (int i = 0; i < arr.size(); ++i)
+        for (int j = 0; j < arr.size() - i - 1; ++j)
+            if (arr[j] > arr[j + 1])
+                swap(arr[j], arr[j + 1]);
+    return arr;
+}
+
+Example-1:
+arr = [3, 2, 1, 4, 5]
+solve(arr) returns [1, 2, 3, 4, 5]
+
+Example-2:
+arr = [5, 10, 15, 20, 25, 30]
+solve(arr) returns [5, 10, 15, 20, 25, 30]
+
+Constraints:
+N = number of items in arr.
+1 <= N <= 10^5.
+1 <= arr[i] <= 10^9.
+If the original input array is not in the best case scenario then
+1 <= N <= 1000.
+
+Scoring:
+Batch   Score   Tests       max(N)
+1       0.1     1000000     10
+2       0.2     10000       100
+3       0.2     100         1000
+4       0.2     500         10000
+5       0.3     50          100000
+----------------------------------
+5      1       Total
+
+Time limit: 2s per batch.
+
+Forbidden keywords: sort main scan print input output file read write thread process

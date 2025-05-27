@@ -1,0 +1,40 @@
+- Enable file name extension view in file explorer.
+
+- You can edit the following files.
+    - "EnterIDandLanguage.txt".
+    - "_A1F_Testing.cpp" or "_A1F_Testing.java" or "_A1F_Testing.py".
+    - "_A1F_Solution.cpp" or "_A1F_Solution.java" or "_A1F_Solution.py".
+- Do not edit any of the other given files.
+
+- Open "EnterIDandLanguage.txt" to edit the file.
+    - Replace "00000000" in the first line with your ID number.
+    - Replace "py" in the second line with the file extension of your language:
+        "cpp" for C++ or "java" for Java or "py" for Python.
+- Read the problem statement from "_A1F_ProblemStatement.txt".
+    - Find the examples and constraints.
+    - Find the scoring distribution and time limit.
+    - Find the forbidden keywords in the end of this file.
+- For testing and debugging purpose you are given a file "_A1F_Testing.txt".
+    - Do not worry about forbidden keywords in this file.
+    - Use this file on your own convenience.
+- After you have thought of a solution, complete the solve() method inside
+    "_A1F_Solution.cpp" or "_A1F_Solution.java" or "_A1F_Solution.py".
+    - Do not use any external library (such as numpy, pandas) in your code.
+    - Do not use any forbidden keywords in your code in this file.
+
+- Run "_A1F_Checker.bat" to check the score of your solution.
+    - See your tentative score in a range of 0 to 1.
+- Some new files are generated.
+    - A file containing your ID number somewhere in its name.
+        - This file contains the code for the last solution resulting the best
+            tentative score you have received so far.
+        - This is the file which you need to submit, your actual score will be
+            revealed later after checking your file by a centralized computer.
+        - If you are not satisfied with the code in this file for some reason
+            then you can delete it and generate a new one.
+    - "WrongAnswer.txt" might contain some clues to help you correct your
+        mistakes if you receive a WrongAnswer verdict.
+    - "TimeLimitExceeded.txt" might also contain some clues when you receive a
+        TimeLimitExceeded verdict.
+- Do not delete any of the given files.
+- You can delete any of the generated files.

@@ -1,0 +1,14 @@
+main
+cin
+cout
+scan
+print
+read
+write
+input
+output
+file
+open
+close
+thread
+process
