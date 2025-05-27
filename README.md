@@ -1,11 +1,14 @@
-# **CSE221 Lab Assignments**  
+# **CSE221 Lab Assignments & Quizzes**  
 
 📌 **Spring 2024** | **Course: CSE221 - Algorithms & Data Structures**  
 
-Welcome to my repository for **CSE221 lab assignments**! This repo contains all the assignments I’ve completed throughout the semester.  
+Welcome to my repository for **CSE221 lab assignments and quizzes**! This repo contains all the assignments and quizzes I’ve completed throughout the semester.  
+
+> ⚠️ **Note:** Solutions for **Lab Quiz 3** and **Lab Quiz 6** are not included because I didn't solve them.
 
 ## 🚨 **DO NOT PLAGIARIZE**  
 **Just don't...**  
+
 
 ## 📂 **Contents**  
 - **Lab 1:** [Basic Algorithms](./LAB%201/)  
