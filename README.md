@@ -1,4 +1,4 @@
-# **CSE221 Lab Assignments & Quizzes**  
+# **CSE221 Lab Assignments & Quizzes(In Python)**  
 
 📌 **Spring 2024** | **Course: CSE221 - Algorithms & Data Structures**  
 
