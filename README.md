@@ -15,6 +15,6 @@ Welcome to my repository for **CSE221 lab assignments**! This repo contains all 
 - **Lab 5:** [BFS and DFS Traversals](./LAB%205/)
 - **Lab 6:** [Topological Sort + BFS/DFS Implementation](./LAB%206/)
 - **Lab 7:** [Dijkstra's Algorithm](./LAB%207/)
-- **Lab 8:** [TBA](./LAB%208/) 
+- **Lab 8:** [MST, Kruskal's Algorithm](./LAB%208/) 
 
 Happy coding! 🚀
